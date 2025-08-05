@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# ADmyBRAND Insights - AI-Powered Analytics Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a modern, visually stunning, and fully responsive analytics dashboard built for the ADmyBRAND hiring challenge. It features interactive charts, a sortable data table, and is enhanced with two powerful features leveraging the Google Gemini API: an AI Assistant for natural language queries and an automated insight generation tool.
 
-## Available Scripts
+**Live Demo:** [**INSERT YOUR VERCEL URL HERE**](https://admybrand-dashboard-challenge.vercel.app/)
 
-In the project directory, you can run:
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📊 Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* **Interactive Dashboard:** Displays key performance indicators (KPIs), a performance-over-time line chart, a campaign cost distribution donut chart, and a clicks-by-campaign bar chart.
+* **Advanced Data Table:** A detailed table of campaign data with features for sorting by column and pagination.
+* **AI-Powered Assistant:** A chat interface that connects to the Gemini API to answer natural language questions about the displayed data.
+* **Automated Insights:** A "Generate Insights" button that uses the Gemini API to analyze the current data and provide a summary of highlights and recommendations.
+* **Fully Responsive Design:** The layout seamlessly adapts to desktop, tablet, and mobile screens.
+* **Modern UI/UX:** Features a clean design, smooth animations, loading skeletons, and a dark/light mode toggle.
+* **CSV Export:** Allows users to download the currently filtered data.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ⚡ Technical Stack
 
-### `npm run build`
+* **Framework:** React (via Create React App)
+* **Styling:** Tailwind CSS
+* **Charts:** Recharts
+* **Icons:** Lucide React
+* **AI:** Google Gemini API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Setup and Running Locally
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1.  **Prerequisites:**
+    * Node.js and npm installed.
 
-### `npm run eject`
+2.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/miki42v/admybrand-dashboard-challenge.git](https://github.com/miki42v/admybrand-dashboard-challenge.git)
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3.  **Navigate into the project directory:**
+    ```bash
+    cd admybrand-dashboard-challenge
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5.  **Set up your environment variables:**
+    * Create a file named `.env` in the root of the project.
+    * Add your Google Gemini API key to it:
+        ```
+        REACT_APP_GEMINI_API_KEY=YOUR_API_KEY_HERE
+        ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+6.  **Run the application:**
+    ```bash
+    npm start
+    ```
+    The application will be available at `http://localhost:3000`.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🤖 AI Usage Report
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project was built with the extensive use of an AI assistant (Google's Gemini) to accelerate development and achieve a production-ready result efficiently. The AI was instrumental across the entire workflow, from initial setup to final deployment.
 
-### Code Splitting
+Initially, the AI was prompted to generate the foundational boilerplate for the React application. This included scaffolding the project with all necessary dependencies, such as Tailwind CSS for styling and Recharts for data visualization, and correctly configuring the complex setup files (`tailwind.config.js`, `postcss.config.js`).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+For the user interface, the AI was tasked with generating the code for all core UI components. Based on high-level design requirements for a "modern, visually stunning dashboard," it created reusable React components for the KPI cards, charts, and the interactive data table. This process was iterative, with prompts to refine animations, implement a dark mode, and add polished loading skeletons for a superior user experience.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The most significant use of AI was in the integration of the Gemini API. I prompted the assistant to implement the `fetch` calls, handle asynchronous loading and error states, and, most importantly, craft the detailed, context-rich prompts that are sent to the Gemini model. This was crucial for both the "AI Assistant" chat feature and the "Generate Insights" tool, turning a static dashboard into an intelligent one. The AI also wrote the client-side JavaScript logic for data manipulation, including the functions for filtering, sorting, and pagination, demonstrating its capability in handling complex application logic.
