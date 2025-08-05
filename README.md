@@ -2,7 +2,7 @@
 
 This project is a modern, visually stunning, and fully responsive analytics dashboard built for the ADmyBRAND hiring challenge. It features interactive charts, a sortable data table, and is enhanced with two powerful features leveraging the Google Gemini API: an AI Assistant for natural language queries and an automated insight generation tool.
 
-**Live Demo:** [**INSERT YOUR VERCEL URL HERE**](https://admybrand-dashboard-challenge.vercel.app/)
+**Live Demo:** [**Vercel hosted Dashboard Link**](https://admybrand-dashboard-challenge.vercel.app/)
 
 
 ---
